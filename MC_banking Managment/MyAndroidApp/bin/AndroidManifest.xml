@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mkyong.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity android:name="com.microcredit.android.NewAccount" />
+        <activity android:name="com.microcredit.android.Payment" />
+        <activity android:name="com.microcredit.android.Loan" />
+        <activity android:name="com.microcredit.android.SearchAccount" />
+        <activity android:name="com.microcredit.android.AllCus" />
+        <activity android:name="com.microcredit.android.AllCusActivity" />
+        <activity android:name="com.microcredit.android.MainActivity" />
+         <activity android:name="com.microcredit.android.CheckLoan" />
+        <activity
+            android:name="com.microcredit.android.Login"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mkyong.android.AllCus"
+            android:label="@string/title_activity_all_cus" >
+        </activity>
+        <activity
+            android:name="com.mkyong.android.Loan"
+            android:label="@string/title_activity_loan" >
+        </activity>
+    </application>
+
+</manifest>
